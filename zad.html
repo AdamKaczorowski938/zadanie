@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hurtownia Akcesoriów dla Zwierząt</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #3b5998;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #2d4373;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #1c2850;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 400px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro h2 {
+            font-size: 32px;
+            color: #333;
+        }
+        .intro p {
+            font-size: 18px;
+            color: #666;
+        }
+        .offer-section, .contact-section {
+            margin-bottom: 40px;
+        }
+        .offer-section h2, .contact-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+        .offer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .offer-card {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .offer-card:hover {
+            transform: translateY(-10px);
+        }
+        .offer-card img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .offer-card h3 {
+            color: #3b5998;
+            margin-bottom: 10px;
+        }
+        .offer-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .offer-card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2d4373;
+        }
+        .contact-section form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-section form label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .contact-section form input, .contact-section form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .contact-section form button {
+            padding: 10px;
+            background-color: #3b5998;
+            color: white;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-section form button:hover {
+            background-color: #2d4373;
+        }
+        footer {
+            background-color: #2d4373;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #b3c7e6;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hurtownia Akcesoriów dla Zwierząt</h1>
+        <p>Profesjonalne produkty w hurtowych cenach</p>
+    </header>
+
+    <nav>
+        <a href="#home">Strona Główna</a>
+        <a href="#about">O nas</a>
+        <a href="#offer">Nasza Oferta</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <section class="hero">
+        <h1>Wszystko, czego potrzebują Twoje zwierzaki</h1>
+    </section>
+
+    <div class="container">
+        <!-- Strona Główna -->
+        <section class="intro" id="home">
+            <h2>Witamy w naszej hurtowni!</h2>
+            <p>Znajdziesz u nas szeroki wybór akcesoriów dla zwierząt domowych. Oferujemy produkty najwyższej jakości w konkurencyjnych cenach, dostosowane do potrzeb zarówno małych, jak i dużych pupili.</p>
+        </section>
+
+        <!-- O nas -->
+        <section class="intro" id="about">
+            <h2>O nas</h2>
+            <p>Jesteśmy wiodącą hurtownią akcesoriów dla zwierząt w Polsce. Nasza misja to dostarczanie najlepszych produktów dla pupili. Działamy z pasją i zaangażowaniem, by zapewnić szeroki wybór produktów dla właścicieli zwierząt i sklepów zoologicznych.</p>
+        </section>
+
+        <!-- Nasza Oferta -->
+        <section class="offer-section" id="offer">
+            <h2>Nasza Oferta</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <img src="https://via.placeholder.com/200" alt="Karma dla psów">
+                    <h3>Karma Premium dla Psów</h3>
+                    <p>Wysokiej jakości karma wspierająca zdrowie Twojego psa.</p>
+                    <p class="price">99,99 zł</p>
+                </div>
+                <div class="offer-card">
+                    <img src="https://via.placeholder.com/200" alt="Legowisko dla kota">
+                    <h3>Legowisko dla Kota</h3>
+                    <p>Wygodne i stylowe legowisko dla Twojego kota.</p>
+                    <p class="price">199,99 zł</p>
+                </div>
+                <div class="offer-card">
+                    <img src="https://via.placeholder.com/200" alt="Szelki dla psów">
+                    <h3>Szelki dla Psów</h3>
+                    <p>Bezpieczne i wygodne szelki na spacer.</p>
+                    <p class="price">49,99 zł</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section class="contact-section" id="contact">
+            <h2>Kontakt</h2>
+            <form>
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Hurtownia Akcesoriów dla Zwierząt. Wszelkie prawa zastrzeżone.</p>
+        <div>
+            <a href="#privacy">Polityka prywatności</a>
+            <a href="#terms">Regulamin</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+    </footer>
+
+</body>
+</html>
